@@ -17,10 +17,6 @@
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 
 require 'bigbluebutton_api'
-require "net/https"
-
-http.use_ssl = true
-http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
 class ApplicationController < ActionController::Base
   include ApplicationHelper

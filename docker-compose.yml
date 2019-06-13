@@ -3,7 +3,7 @@ version: '3'
 services:
   app:
     entrypoint: [bin/start]
-    image: vtt-greenlight/greenlight:v2
+    image: vtt_greenlight/greenlight:v2
     container_name: greenlight-v2
     env_file: .env
     restart: unless-stopped
