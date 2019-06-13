@@ -2,6 +2,6 @@
 
 module Greenlight
   class Application
-    VERSION = "2"
+    VERSION = "v2"
   end
 end
