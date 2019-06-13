@@ -1,8 +1,7 @@
 FROM ruby:2.5
 
 # Install app dependencies.
-RUN apt-get update 
-RUN apt-get install -y build-essential libpq-dev nodejs
+RUN apt-get check && apt-get update && apt-get install -y build-essential libpq-dev nodejs
 
 # Set an environment variable for the install location.
 ENV RAILS_ROOT /usr/src/app
