@@ -69,7 +69,7 @@ fi
 
 # Build the image
 echo "#### Docker image $CD_DOCKER_REPO:$CD_REF_NAME is being built"
-docker build -t --network=host $CD_DOCKER_REPO:$CD_REF_NAME --no-cache .
+docker build --network=host -t $CD_DOCKER_REPO:$CD_REF_NAME .
 
 if [ -z "$CD_DOCKER_USERNAME" ] || [ -z "$CD_DOCKER_PASSWORD" ]; then
   echo "#### Docker image for $CD_DOCKER_REPO can't be published because CD_DOCKER_USERNAME or CD_DOCKER_PASSWORD are missing"
